@@ -1,13 +1,21 @@
-// script.js
 document.getElementById('cv_download').addEventListener('click', function() {
-    // Create an anchor element (a) to trigger the download
-    var downloadAnchor = document.createElement('a');
-    downloadAnchor.setAttribute('href', '../assets/cv/'); // Replace with your file path
-    downloadAnchor.setAttribute('download', 'Faldu Viraj.pdf'); // Replace with desired file name
-
-    // Simulate click of anchor to trigger download
-    downloadAnchor.click();
-
-    // Remove anchor from body
-    document.body.removeChild(downloadAnchor);
-});
+    // Replace with your file URL
+    var fileUrl = '../assets/cv/';
+  
+    // Use an anchor element to initiate download
+    var a = document.createElement('a');
+    a.style.display = 'none';
+    console.log(fileUrl);
+    a.href = fileUrl;
+  
+    // Set the file name (you can set dynamically if needed)
+    a.download = 'Faldu Viraj.pdf'; // Example filename
+  
+    // Append anchor to body and trigger click event
+    document.body.appendChild(a);
+    a.click();
+  
+    // Clean up
+    document.body.removeChild(a);
+  });
+  
