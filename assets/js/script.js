@@ -1,6 +1,6 @@
 document.getElementById('cv_download').addEventListener('click', function() {
     // Replace with your file URL
-    var fileUrl = '../assets/cv/';
+    var fileUrl = 'assets/cv/';
   
     // Use an anchor element to initiate download
     var a = document.createElement('a');
