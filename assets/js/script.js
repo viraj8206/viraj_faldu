@@ -5,7 +5,6 @@ document.getElementById('cv_download').addEventListener('click', function() {
     // Use an anchor element to initiate download
     var a = document.createElement('a');
     a.style.display = 'none';
-    console.log(fileUrl);
     a.href = fileUrl;
   
     // Set the file name (you can set dynamically if needed)
