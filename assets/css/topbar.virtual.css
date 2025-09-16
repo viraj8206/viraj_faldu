@@ -143,7 +143,7 @@
 }
 
 .page-about .img-place {
-  width: 280px;
+  width: 235px;
   height: 350px;
   background-color: #dfe0e6;
   overflow: unset;
@@ -659,4 +659,5 @@
 
 .theme-purple .post-grid .post-category {
   color: #6f42c1;
+
 }
